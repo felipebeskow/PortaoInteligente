@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.app_portao">
+    package="br.net.beskow.appportao">
    <application
-        android:label="app_portao"
-        android:icon="@mipmap/ic_launcher">
+        android:label="App Portão"
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -38,4 +38,8 @@
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
+
+    <!-- Required to fetch data from the internet. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
 </manifest>

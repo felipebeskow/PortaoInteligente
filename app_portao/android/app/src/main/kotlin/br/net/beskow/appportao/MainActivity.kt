@@ -1,4 +1,4 @@
-package com.example.app_portao
+package br.net.beskow.appportao
 
 import io.flutter.embedding.android.FlutterActivity
 
