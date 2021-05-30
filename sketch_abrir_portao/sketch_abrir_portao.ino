@@ -44,14 +44,14 @@ void loop() {
                     if (readString.indexOf("?") <0){ 
                     }
                     else
-                    if(readString.indexOf("abrir=helfensteler") >0){ 
+                    if(readString.indexOf("abrir=SENHA-PARA-ABRIR") >0){ 
                         abrirPortao();
                     }
                     client.println("HTTP/1.1 200 OK");
                     client.println("Content-Type: text/html");
                     client.println();
                     client.println("<body><html>");
-                    client.println("<center><form method=get name=LED><input type=hidden name=abrir value=\"helfensteler\" /><input type=submit value=Abrir Portão></form></center>");
+                    client.println("<center><form method=get name=LED><input type=hidden name=abrir value=\"SENHA-PARA-ABRIR\" /><input type=submit value=Abrir Portão></form></center>");
                     client.println("</body></html>");
                     readString=""; 
                     client.stop(); 
